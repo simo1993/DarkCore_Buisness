@@ -96,5 +96,10 @@ namespace DarkCore
         {
             Application.Exit(); 
         }
+        private string probar()
+        {
+            string resultat="knkb";
+            return resultat;
+        }
     }
 }
