@@ -52,6 +52,12 @@
     <Compile Include="adminScreen.Designer.cs">
       <DependentUpon>adminScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionDespositivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionDespositivos.Designer.cs">
+      <DependentUpon>GestionDespositivos.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,12 +87,14 @@
     <EmbeddedResource Include="adminScreen.resx">
       <DependentUpon>adminScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionDespositivos.resx">
+      <DependentUpon>GestionDespositivos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaPrincipal.resx">
       <DependentUpon>PantallaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelAdministrador.resx">
       <DependentUpon>PanelAdministrador.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

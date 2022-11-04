@@ -23,5 +23,12 @@ namespace DarkCore
             this.MinimumSize = this.Size;
             this.MaximumSize = this.Size;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            GestionDespositivos frmDispositivos = new GestionDespositivos();
+            frmDispositivos.Show();
+            this.Hide();
+        }
     }
 }

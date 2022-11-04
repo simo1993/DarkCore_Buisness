@@ -28,3 +28,19 @@ D:\DarkCore\DarkCore\obj\Debug\DarkCore.csproj.GenerateResource.cache
 D:\DarkCore\DarkCore\obj\Debug\DarkCore.csproj.CoreCompileInputs.cache
 D:\DarkCore\DarkCore\obj\Debug\DarkCore.exe
 D:\DarkCore\DarkCore\obj\Debug\DarkCore.pdb
+C:\Nueva carpeta\DarkCore\DarkCore\bin\Debug\DarkCore.exe.config
+C:\Nueva carpeta\DarkCore\DarkCore\bin\Debug\DarkCore.exe
+C:\Nueva carpeta\DarkCore\DarkCore\bin\Debug\DarkCore.pdb
+C:\Nueva carpeta\DarkCore\DarkCore\obj\Debug\DarkCore.csproj.AssemblyReference.cache
+C:\Nueva carpeta\DarkCore\DarkCore\obj\Debug\DarkCore.csproj.SuggestedBindingRedirects.cache
+C:\Nueva carpeta\DarkCore\DarkCore\obj\Debug\DarkCore.adminScreen.resources
+C:\Nueva carpeta\DarkCore\DarkCore\obj\Debug\DarkCore.GestionDespositivos.resources
+C:\Nueva carpeta\DarkCore\DarkCore\obj\Debug\DarkCore.PantallaPrincipal.resources
+C:\Nueva carpeta\DarkCore\DarkCore\obj\Debug\DarkCore.PanelAdministrador.resources
+C:\Nueva carpeta\DarkCore\DarkCore\obj\Debug\DarkCore.FrmLogin.resources
+C:\Nueva carpeta\DarkCore\DarkCore\obj\Debug\DarkCore.pantallaSplash.resources
+C:\Nueva carpeta\DarkCore\DarkCore\obj\Debug\DarkCore.Properties.Resources.resources
+C:\Nueva carpeta\DarkCore\DarkCore\obj\Debug\DarkCore.csproj.GenerateResource.cache
+C:\Nueva carpeta\DarkCore\DarkCore\obj\Debug\DarkCore.csproj.CoreCompileInputs.cache
+C:\Nueva carpeta\DarkCore\DarkCore\obj\Debug\DarkCore.exe
+C:\Nueva carpeta\DarkCore\DarkCore\obj\Debug\DarkCore.pdb
