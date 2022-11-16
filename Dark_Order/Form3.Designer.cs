@@ -94,6 +94,7 @@ namespace Dark_Order_Pellitero_Carles
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.pantalla);
             this.panel1.Controls.Add(this.titulo);
             this.panel1.Controls.Add(this.usuari);
@@ -135,7 +136,7 @@ namespace Dark_Order_Pellitero_Carles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(747, 447);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);

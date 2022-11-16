@@ -94,6 +94,7 @@ namespace Dark_Order_Pellitero_Carles
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackColor = System.Drawing.Color.DarkCyan;
             resources.ApplyResources(this, "$this");
             this.ControlBox = false;
             this.Controls.Add(this.percent);

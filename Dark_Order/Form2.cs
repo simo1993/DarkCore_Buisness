@@ -85,5 +85,10 @@ namespace Dark_Order_Pellitero_Carles
         {
             Application.Exit();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            password.UseSystemPasswordChar = true;
+        }
     }
 }

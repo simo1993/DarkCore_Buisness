@@ -113,7 +113,7 @@ namespace Dark_Order_Pellitero_Carles
             // Form4
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(1924, 796);
             this.Controls.Add(this.nomusuari);
             this.Controls.Add(this.button4);

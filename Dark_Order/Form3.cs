@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections;
 
@@ -14,6 +9,7 @@ namespace Dark_Order_Pellitero_Carles
 {
     public partial class Form3 : Form
     {
+
         public Form3()
         {
             InitializeComponent();
@@ -31,11 +27,9 @@ namespace Dark_Order_Pellitero_Carles
         {
             Random random = new Random();
 
-            //Random panel = new Random(); a lo mejor quitar
             string[] lletres = { "A", "B", "C", "D" };
             string[] numeros = { "1", "2", "3", "4", "5" };
 
-            //Numero ajensiat al usuari.
             int LIndex = random.Next(lletres.Length);
             int NIndex = random.Next(numeros.Length);
 
@@ -60,7 +54,6 @@ namespace Dark_Order_Pellitero_Carles
                 panel.RemoveAt(Indexproba);
             }
 
-            //Crear el panel amb les seves tecles 
             for (int i = 0; i < 10; i++)
             {
 
@@ -94,8 +87,8 @@ namespace Dark_Order_Pellitero_Carles
             if (pantalla.Text.Equals("4554"))
             {
                 this.Hide();
-                Form5 administracio = new Form5();
-                administracio.admin.Text = usuari.Text;
+                SPRINT_MESSI_MENU.FrmMenu administracio = new SPRINT_MESSI_MENU.FrmMenu();
+                administracio.lbUsuari.Text = usuari.Text;
                 administracio.ShowDialog();
                 AddOwnedForm(administracio);
                 

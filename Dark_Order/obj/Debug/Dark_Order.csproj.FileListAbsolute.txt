@@ -6,7 +6,6 @@ D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order_Pellitero_Carles
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order_Pellitero_Carles.Form2.resources
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order_Pellitero_Carles.Form3.resources
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order_Pellitero_Carles.Form4.resources
-D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order_Pellitero_Carles.Form5.resources
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order_Pellitero_Carles.Form6.resources
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order.Properties.Resources.resources
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order_Pellitero_Carles.Form1.aa-ER.resources
@@ -15,3 +14,8 @@ D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order.csproj.CoreCompi
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\aa-ER\Dark_Order.resources.dll
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order.exe
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order.pdb
+D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order.csproj.AssemblyReference.cache
+D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\DarkCoreGestionDispositivos.GestionDispositivos.resources
+D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\SPRINT_MESSI_MENU.FrmMenu.resources
+D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\SPRINT_MESSI.AdminCoord.resources
+D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Sprint3_gestio_dusuaris.GestioUsuari.resources
