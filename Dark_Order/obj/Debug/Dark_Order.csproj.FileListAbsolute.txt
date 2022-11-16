@@ -5,7 +5,6 @@ D:\2022.2023\M13\Grupal Trabajo\Dark_Order\bin\Debug\aa-ER\Dark_Order.resources.
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order_Pellitero_Carles.Form1.resources
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order_Pellitero_Carles.Form2.resources
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order_Pellitero_Carles.Form3.resources
-D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order_Pellitero_Carles.Form4.resources
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order_Pellitero_Carles.Form6.resources
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order.Properties.Resources.resources
 D:\2022.2023\M13\Grupal Trabajo\Dark_Order\obj\Debug\Dark_Order_Pellitero_Carles.Form1.aa-ER.resources
