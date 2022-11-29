@@ -1,0 +1,9 @@
+D:\M13\SPRINT MESSI\LauncherApp\bin\Debug\LauncherApp.dll
+D:\M13\SPRINT MESSI\LauncherApp\bin\Debug\LauncherApp.pdb
+D:\M13\SPRINT MESSI\LauncherApp\obj\Debug\LauncherApp.csproj.AssemblyReference.cache
+D:\M13\SPRINT MESSI\LauncherApp\obj\Debug\LauncherApp.LauncherApp.resources
+D:\M13\SPRINT MESSI\LauncherApp\obj\Debug\LauncherApp.Properties.Resources.resources
+D:\M13\SPRINT MESSI\LauncherApp\obj\Debug\LauncherApp.csproj.GenerateResource.cache
+D:\M13\SPRINT MESSI\LauncherApp\obj\Debug\LauncherApp.csproj.CoreCompileInputs.cache
+D:\M13\SPRINT MESSI\LauncherApp\obj\Debug\LauncherApp.dll
+D:\M13\SPRINT MESSI\LauncherApp\obj\Debug\LauncherApp.pdb
