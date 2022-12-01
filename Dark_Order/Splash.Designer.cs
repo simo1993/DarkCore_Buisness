@@ -1,7 +1,7 @@
 ﻿
 namespace Dark_Order_Pellitero_Carles
 {
-    partial class Form1
+    partial class Splash
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -30,7 +30,7 @@ namespace Dark_Order_Pellitero_Carles
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
             this.barraprogresiva = new System.Windows.Forms.ProgressBar();
             this.temps = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -91,7 +91,7 @@ namespace Dark_Order_Pellitero_Carles
             this.percent.BackColor = System.Drawing.Color.Transparent;
             this.percent.Name = "percent";
             // 
-            // Form1
+            // Splash
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.DarkCyan;
@@ -105,7 +105,7 @@ namespace Dark_Order_Pellitero_Carles
             this.Controls.Add(this.barraprogresiva);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
-            this.Name = "Form1";
+            this.Name = "Splash";
             this.ShowIcon = false;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);

@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Collections;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace SPRINT_MESSI
 {
@@ -12,11 +15,13 @@ namespace SPRINT_MESSI
         {
             InitializeComponent();
         }
+        private SqlConnection conn;
+        private string query;
+        DataSet dts;
         public Dictionary<string, string> openWith;
         public ArrayList code;
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            tblCoords.Visible = false;
             Random random = new Random();
 
             ArrayList letras = new ArrayList();
@@ -54,26 +59,103 @@ namespace SPRINT_MESSI
 
             openWith = new Dictionary<string, string>();
 
+
+
             for (int i = 0; i < code.Count; i++)
             {
                 string codigo = lstcodigo[i];
                 openWith.Add(code[i].ToString(), codigo);
             }
-            tblCoords.Visible = true;
+
+            for (int i = 0; i < openWith.Count; i++)
+            {
+                
+            }
+
+            
+            string cnx;
+            cnx = GenerarCnx();
+            conn = new SqlConnection(cnx);
+            SqlDataAdapter sqadapter;
+            dts = new DataSet();
+            Deletecmd();
+            query = "SELECT * FROM ADMINCOORDINATES where 1=2";
+            sqadapter = new SqlDataAdapter(query, conn);
+            conn.Open();
+
+            sqadapter.Fill(dts, "ADMINCOORDINATES");
+
+            conn.Close();
+
+            DataTable table = dts.Tables[0];
+            for (int i = 0; i < openWith.Count; i++)
+            {            
+                DataRow row = table.NewRow();
+                row["Coordinate"] = code[i].ToString();
+                row["ValueCoord"] = openWith[code[i].ToString()].ToString();
+                dts.Tables[0].Rows.Add(row);
+
+            }
+            SaveChanges(); 
+        }
+        public void Deletecmd()
+        {
+            query = "DELETE FROM AdminCoordinates";
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+
+            int registresAfectats = cmd.ExecuteNonQuery();
+
+            cmd.Dispose();
+            conn.Close();
+        }
+        public void SaveChanges()
+        {
+            SqlDataAdapter adapter;
+            conn.Open();
+            adapter = new SqlDataAdapter(query, conn);
+
+            SqlCommandBuilder cmdBuilder;
+            cmdBuilder = new SqlCommandBuilder(adapter);
+
+            if (dts.HasChanges())
+            {
+
+                int result = adapter.Update(dts.Tables[0]);
+
+            }
+            conn.Close();
+        }
+        public string GenerarCnx()
+        {
+            string cnx = "";
+
+            ConnectionStringSettings connec =
+            ConfigurationManager.ConnectionStrings["Conecció"];
+
+            if (connec != null)
+            {
+                cnx = connec.ConnectionString;
+            }
+            conn = new SqlConnection(cnx);
+
+            return cnx;
         }
 
         private void showData()
         {
 
-            for (int i = 0; i < openWith.Count; i++)
+            dts = PortarDTS();
+
+            for (int i = 0; i < dts.Tables[0].Rows.Count; i++)
             {
                 Label lblcontenido = new Label();
-                lblcontenido.Text = openWith[code[i].ToString()];
+                lblcontenido.Text = dts.Tables[0].Rows[i].Field<string>("ValueCoord");
                 lblcontenido.Dock = DockStyle.Fill;
                 lblcontenido.TextAlign = ContentAlignment.MiddleCenter;
                 tblCoords.Controls.Add(lblcontenido);
             }
-
         }
 
         private void btnShow_Click(object sender, EventArgs e)
@@ -83,15 +165,38 @@ namespace SPRINT_MESSI
             Control l = this.tblCoords.GetControlFromPosition(1, 1);
             if (l != null)
             {
+
                 for (int i = 1; i <= 20; i++)
                 {
+
                     Control c = this.tblCoords.GetControlFromPosition(1, 1);
+
+
                     c.Dispose();
+
                 }
             }
-
             showData();
             tblCoords.Visible = true;
+        }
+
+        public DataSet PortarDTS()
+        {
+            string cnx;
+            cnx = GenerarCnx();
+            conn = new SqlConnection(cnx);
+            SqlDataAdapter sqadapter;
+            dts = new DataSet();
+
+            query = "SELECT * FROM ADMINCOORDINATES";
+            sqadapter = new SqlDataAdapter(query, conn);
+            conn.Open();
+
+            sqadapter.Fill(dts, "ADMINCOORDINATES");
+
+            conn.Close();
+
+            return dts;
         }
 
         private void AdminCoord_FormClosed(object sender, FormClosedEventArgs e)

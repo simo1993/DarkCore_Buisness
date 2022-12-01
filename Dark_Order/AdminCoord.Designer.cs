@@ -47,7 +47,7 @@ namespace SPRINT_MESSI
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Location = new System.Drawing.Point(59, 52);
+            this.btnGenerate.Location = new System.Drawing.Point(59, 36);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(109, 42);
             this.btnGenerate.TabIndex = 0;
@@ -57,7 +57,7 @@ namespace SPRINT_MESSI
             // 
             // btnShow
             // 
-            this.btnShow.Location = new System.Drawing.Point(223, 52);
+            this.btnShow.Location = new System.Drawing.Point(223, 36);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(110, 41);
             this.btnShow.TabIndex = 1;
@@ -220,7 +220,7 @@ namespace SPRINT_MESSI
             this.Name = "AdminCoord";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Admin Coord";
+            this.Text = "AdminCoord";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AdminCoord_FormClosed);
             this.tblCoords.ResumeLayout(false);
             this.tblCoords.PerformLayout();

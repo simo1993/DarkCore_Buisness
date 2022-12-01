@@ -29,14 +29,17 @@ namespace Dark_Order_Pellitero_Carles
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.usuari = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btValida = new System.Windows.Forms.Button();
+            this.UsuarioError = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsuarioError)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -80,6 +83,7 @@ namespace Dark_Order_Pellitero_Carles
             this.usuari.Name = "usuari";
             this.usuari.Size = new System.Drawing.Size(189, 22);
             this.usuari.TabIndex = 3;
+            this.usuari.Validating += new System.ComponentModel.CancelEventHandler(this.usuari_Validating);
             // 
             // password
             // 
@@ -87,23 +91,29 @@ namespace Dark_Order_Pellitero_Carles
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(189, 22);
             this.password.TabIndex = 4;
+            this.password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.password_KeyDown);
+            this.password.Validating += new System.ComponentModel.CancelEventHandler(this.password_Validating);
             // 
-            // button1
+            // btValida
             // 
-            this.button1.Location = new System.Drawing.Point(538, 313);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 33);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Valida";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btValida.Location = new System.Drawing.Point(538, 313);
+            this.btValida.Name = "btValida";
+            this.btValida.Size = new System.Drawing.Size(77, 33);
+            this.btValida.TabIndex = 5;
+            this.btValida.Text = "Valida";
+            this.btValida.UseVisualStyleBackColor = true;
+            this.btValida.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // UsuarioError
+            // 
+            this.UsuarioError.ContainerControl = this;
             // 
             // Form2
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(652, 373);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btValida);
             this.Controls.Add(this.password);
             this.Controls.Add(this.usuari);
             this.Controls.Add(this.pictureBox1);
@@ -117,6 +127,7 @@ namespace Dark_Order_Pellitero_Carles
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsuarioError)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,6 +140,7 @@ namespace Dark_Order_Pellitero_Carles
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox usuari;
         private System.Windows.Forms.TextBox password;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btValida;
+        private System.Windows.Forms.ErrorProvider UsuarioError;
     }
 }

@@ -3,24 +3,28 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Collections;
-
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Data;
 
 namespace Dark_Order_Pellitero_Carles
 {
     public partial class Form3 : Form
     {
-
         public Form3()
         {
             InitializeComponent();
         }
-        
+
+        DataSet dts;
+        string cnx;
+        string taula = "AdminCoordinates";
+        SqlConnection conn;
+
         private void Form3_Load(object sender, EventArgs e)
         {
-
             Telcas_Panel();
             Usuari_Panel();
-            
         }
 
         private void Usuari_Panel()
@@ -84,19 +88,52 @@ namespace Dark_Order_Pellitero_Carles
 
         private void Botovalidar_Click(object sender, EventArgs e)
         {
-            if (pantalla.Text.Equals("4554"))
+            cnx = GenerarCnx();
+            conn = new SqlConnection(cnx);
+
+            SqlDataAdapter adapter;
+
+            string query;
+
+            query = "select * from "+ taula + " where Coordinate = '" + usuari.Text + "' and ValueCoord = '" + pantalla.Text + "';";
+
+            adapter = new SqlDataAdapter(query, conn);
+
+            conn.Open();
+
+            dts = new DataSet();
+
+            adapter.Fill(dts, taula);
+
+            conn.Close();
+
+            if (dts.Tables[0].Rows.Count == 1)
             {
                 this.Hide();
                 SPRINT_MESSI_MENU.FrmMenu administracio = new SPRINT_MESSI_MENU.FrmMenu();
                 administracio.lbUsuari.Text = usuari.Text;
                 administracio.ShowDialog();
                 AddOwnedForm(administracio);
-                
             }
             else
             {
                 MessageBox.Show("Contrasenya incorrecta");
             }
+        }
+        public string GenerarCnx()
+        {
+            string cnx = "";
+
+            ConnectionStringSettings connec =
+            ConfigurationManager.ConnectionStrings["Conecció"];
+
+            if (connec != null)
+            {
+                cnx = connec.ConnectionString;
+            }
+            conn = new SqlConnection(cnx);
+
+            return cnx;
         }
     }
 }

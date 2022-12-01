@@ -16,7 +16,7 @@ namespace Dark_Order_Pellitero_Carles
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Splash());
         }
     }
 }

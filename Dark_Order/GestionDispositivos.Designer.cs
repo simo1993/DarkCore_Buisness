@@ -30,15 +30,15 @@
         {
             this.txtMac = new System.Windows.Forms.TextBox();
             this.txtHostName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lbmac = new System.Windows.Forms.Label();
+            this.lbHostName = new System.Windows.Forms.Label();
+            this.ButtonSave = new System.Windows.Forms.Button();
+            this.ButtonDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtMac
             // 
-            this.txtMac.Location = new System.Drawing.Point(357, 140);
+            this.txtMac.Location = new System.Drawing.Point(260, 98);
             this.txtMac.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMac.Name = "txtMac";
             this.txtMac.Size = new System.Drawing.Size(209, 22);
@@ -46,73 +46,77 @@
             // 
             // txtHostName
             // 
-            this.txtHostName.Location = new System.Drawing.Point(357, 204);
+            this.txtHostName.Location = new System.Drawing.Point(260, 133);
             this.txtHostName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtHostName.Name = "txtHostName";
             this.txtHostName.Size = new System.Drawing.Size(209, 22);
             this.txtHostName.TabIndex = 1;
             // 
-            // label1
+            // lbmac
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(287, 141);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 21);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Mac";
+            this.lbmac.AutoSize = true;
+            this.lbmac.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbmac.Location = new System.Drawing.Point(148, 97);
+            this.lbmac.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbmac.Name = "lbmac";
+            this.lbmac.Size = new System.Drawing.Size(40, 21);
+            this.lbmac.TabIndex = 2;
+            this.lbmac.Text = "Mac";
             // 
-            // label2
+            // lbHostName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(257, 203);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 21);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Host Name";
+            this.lbHostName.AutoSize = true;
+            this.lbHostName.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHostName.Location = new System.Drawing.Point(148, 132);
+            this.lbHostName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbHostName.Name = "lbHostName";
+            this.lbHostName.Size = new System.Drawing.Size(92, 21);
+            this.lbHostName.TabIndex = 3;
+            this.lbHostName.Text = "Host Name";
             // 
-            // button1
+            // ButtonSave
             // 
-            this.button1.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(357, 277);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ButtonSave.Enabled = false;
+            this.ButtonSave.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonSave.Location = new System.Drawing.Point(314, 204);
+            this.ButtonSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonSave.Name = "ButtonSave";
+            this.ButtonSave.Size = new System.Drawing.Size(100, 28);
+            this.ButtonSave.TabIndex = 4;
+            this.ButtonSave.Text = "Save";
+            this.ButtonSave.UseVisualStyleBackColor = true;
+            this.ButtonSave.Click += new System.EventHandler(this.ButtonSave_Click);
             // 
-            // button2
+            // ButtonDelete
             // 
-            this.button2.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(508, 277);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ButtonDelete.Enabled = false;
+            this.ButtonDelete.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonDelete.Location = new System.Drawing.Point(465, 204);
+            this.ButtonDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonDelete.Name = "ButtonDelete";
+            this.ButtonDelete.Size = new System.Drawing.Size(100, 28);
+            this.ButtonDelete.TabIndex = 5;
+            this.ButtonDelete.Text = "Delete";
+            this.ButtonDelete.UseVisualStyleBackColor = true;
+            this.ButtonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
             // 
             // GestionDispositivos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(891, 453);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(719, 328);
+            this.Controls.Add(this.ButtonDelete);
+            this.Controls.Add(this.ButtonSave);
+            this.Controls.Add(this.lbHostName);
+            this.Controls.Add(this.lbmac);
             this.Controls.Add(this.txtHostName);
             this.Controls.Add(this.txtMac);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "GestionDispositivos";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gestió de dispositius";
+            this.Text = "Menu Admin";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GestionDispositivos_FormClosed);
             this.Load += new System.EventHandler(this.GestionDispositivos_Load);
             this.ResumeLayout(false);
@@ -124,9 +128,9 @@
 
         private System.Windows.Forms.TextBox txtMac;
         private System.Windows.Forms.TextBox txtHostName;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbmac;
+        private System.Windows.Forms.Label lbHostName;
+        private System.Windows.Forms.Button ButtonSave;
+        private System.Windows.Forms.Button ButtonDelete;
     }
 }

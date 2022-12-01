@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using DarkCoreGestionDispositivos;
+using SPRINT_MESSI;
+using Sprint3_gestio_dusuaris;
 
 namespace SPRINT_MESSI_MENU
 {
@@ -13,21 +16,21 @@ namespace SPRINT_MESSI_MENU
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SPRINT_MESSI.AdminCoord adminCoord = new SPRINT_MESSI.AdminCoord();
+            AdminCoord adminCoord = new AdminCoord();
             adminCoord.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            GestionDispositivos gestionDispositivos = new GestionDispositivos();
             this.Hide();
-            DarkCoreGestionDispositivos.GestionDispositivos gestionDispositivos = new DarkCoreGestionDispositivos.GestionDispositivos();
             gestionDispositivos.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Sprint3_gestio_dusuaris.GestioUsuari gestioUsuari = new Sprint3_gestio_dusuaris.GestioUsuari();
+            GestioUsuari gestioUsuari = new GestioUsuari();
             gestioUsuari.ShowDialog();
         }
 
